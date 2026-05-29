@@ -1,0 +1,25 @@
+html {
+  font-size: 24px;
+}
+body {
+  background-color: #18181a;
+  color: whitesmoke;
+}
+a {
+  color: whitesmoke;
+}
+a:hover,
+a:active {
+  color: #8f8f96;
+}
+
+table,
+tr,
+th,
+td,
+caption {
+  border: 1px solid #eeeeee55;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-collapse: collapse;
+  padding: 2rex;
+}
