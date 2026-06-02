@@ -1,10 +1,31 @@
-html {
-  font-size: 24px;
-}
+/**/
+/* Background, Title (h1), Text */
+/**/
+
 body {
   background-color: #18181a;
   color: whitesmoke;
+  font-size: 24px;
 }
+
+h1 {
+  color: rgb(166, 166, 223);
+}
+
+/* Paragraph & Lists*/
+
+p,
+ol,
+ul,
+dl {
+  font-size: 22px;
+  color: rgb(161, 181, 173);
+}
+
+/**/
+/* Anchor Link */
+/**/
+
 a {
   color: whitesmoke;
 }
@@ -13,13 +34,31 @@ a:active {
   color: #8f8f96;
 }
 
+/* Table */
+
 table,
 tr,
 th,
 td,
 caption {
   border: 1px solid #eeeeee55;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: monospace;
   border-collapse: collapse;
   padding: 2rex;
+}
+
+/**/
+/* Class */
+/**/
+
+.bold {
+  font-weight: 700;
+}
+
+.cap {
+  text-transform: uppercase;
+}
+
+.darkgreen {
+  color: rgb(79, 137, 107);
 }
