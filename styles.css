@@ -1,25 +1,36 @@
 /**/
-/* Background, Title (h1), Text */
+/* Background, Title (h1), subtitle (h2 & h3), Font color, Size & Style */
 /**/
 
-body {
-  background-color: #18181a;
-  color: whitesmoke;
-  font-size: 24px;
+html {
+  background-color: #293241;
+  color: #e0fbfc;
+  font-size: 20px;
+  line-height: 1;
 }
 
 h1 {
-  color: rgb(166, 166, 223);
+  color: #ee6c4d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 44px;
 }
 
-/* Paragraph & Lists*/
+h2,
+h3 {
+  color: #f7e0d4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+}
 
-p,
-ol,
-ul,
-dl {
-  font-size: 22px;
-  color: rgb(161, 181, 173);
+main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+textarea,
+input,
+select {
+  font: inherit;
 }
 
 /**/
@@ -27,11 +38,11 @@ dl {
 /**/
 
 a {
-  color: whitesmoke;
+  color: #e0fbfc;
 }
 a:hover,
 a:active {
-  color: #8f8f96;
+  color: whitesmoke;
 }
 
 /* Table */
@@ -41,8 +52,8 @@ tr,
 th,
 td,
 caption {
-  border: 1px solid #eeeeee55;
-  font-family: monospace;
+  border: 1px solid whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   padding: 2rex;
   width: auto;
@@ -57,14 +68,18 @@ caption {
   font-weight: 700;
 }
 
+.border {
+  border: 1px solid whitesmoke;
+}
+
 .cap {
   text-transform: uppercase;
 }
 
-.darkgreen {
-  color: rgb(79, 137, 107);
+.cream {
+  color: #f7e0d4;
 }
 
-.border {
-  border: 1px solid rgb(189, 185, 185);
+.title {
+  color: #ee6c4d;
 }
