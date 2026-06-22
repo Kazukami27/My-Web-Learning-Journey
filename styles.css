@@ -1,29 +1,34 @@
 /**/
-/* Background, Title (h1), subtitle (h2 & h3), Font color, Size & Style */
+/* Background, Title (h1), subtitle (h2 & h3) */
+/* Font color, Size, Style, width */
 /**/
 
 html {
   background-color: #293241;
   color: #e0fbfc;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1;
 }
 
 h1 {
   color: #ee6c4d;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 42px;
+  font-size: 2.6179rem;
 }
 
 h2,
 h3 {
   color: #f7e0d4;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 26px;
+  font-size: 1.618rem;
 }
 
 main {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  width: 60ch;
 }
 
 button,
@@ -65,13 +70,26 @@ caption {
 /* Class */
 /**/
 
+.container1 {
+  background-color: #3d5a80;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.container2 {
+  border: 2px solid #f5f5f5;
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
 .bold {
   font-weight: 700;
 }
 
 .border {
   border: 1px solid #f5f5f5;
-  padding: 1rem;
+  padding: 0.5em;
 }
 
 .cap {
@@ -84,4 +102,8 @@ caption {
 
 .title {
   color: #ee6c4d;
+}
+
+.margin0 {
+  margin: 0;
 }
