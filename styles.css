@@ -5,21 +5,21 @@
 html {
   background-color: #293241;
   color: #e0fbfc;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
 }
 
 h1 {
   color: #ee6c4d;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 52px;
+  font-size: 42px;
 }
 
 h2,
 h3 {
   color: #f7e0d4;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 32px;
+  font-size: 26px;
 }
 
 main {
@@ -34,9 +34,6 @@ fieldset {
   font: inherit;
 }
 
-fieldset {
-  width: 50%;
-}
 /**/
 /* Anchor Link */
 /**/
