@@ -10,6 +10,10 @@ html {
   line-height: 1;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   color: #ee6c4d;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -28,7 +32,7 @@ main {
 }
 
 p {
-  width: 60ch;
+  width: auto;
 }
 
 button,
@@ -70,16 +74,16 @@ caption {
 /* Class */
 /**/
 
-.container1 {
+.ch0 {
   background-color: #293241;
-  margin: 1.5rem;
+  margin: 0;
   padding: 1.5rem;
   margin: 0;
 }
 
-.container2 {
+.ch1 {
   background-color: #293241;
-  margin: 1.5rem;
+  margin: 0;
   padding: 1.5rem;
   background-image: url("Display/IMG-01--LAKESIDE-CABIN.jpg");
   background-repeat: no-repeat;
@@ -89,10 +93,10 @@ caption {
   min-height: 70vh;
 }
 
-.container3 {
+.ch2 {
   background-color: #293241;
   border: 2px solid #f5f5f5;
-  margin: 1.5rem;
+  margin: 0;
   padding: 1.5rem;
 }
 
@@ -117,6 +121,34 @@ caption {
   color: #ee6c4d;
 }
 
-.margin0 {
-  margin: 0;
+.sides {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.object1 {
+  flex: 1;
+  margin: 3rem;
+  background-color: #f7e0d4;
+  min-height: 300px;
+  border: 3px solid #ee6c4d;
+  border-radius: 150px;
+  outline: 5px solid #3d5a80;
+  outline-offset: -0.55rem;
+  text-align: center;
+  align-content: center;
+  color: #ee6c4d;
+  font-size: 1.618rem;
+}
+.object2 {
+  flex: 1;
+  margin: 3rem;
+  background-image: url("Display/IMG-01--LAKESIDE-CABIN.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 300px;
+  border: 3px solid #ee6c4d;
+  border-radius: 75px;
 }
