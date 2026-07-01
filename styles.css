@@ -131,7 +131,8 @@ caption {
   flex: 1;
   margin: 3rem;
   background-color: #f7e0d4;
-  min-height: 300px;
+  min-width: 200px;
+  height: 300px;
   border: 3px solid #ee6c4d;
   border-radius: 150px;
   outline: 5px solid #3d5a80;
@@ -148,7 +149,8 @@ caption {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  min-height: 300px;
+  min-width: 200px;
+  height: 300px;
   border: 3px solid #ee6c4d;
   border-radius: 75px;
 }
