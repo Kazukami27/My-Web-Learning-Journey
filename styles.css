@@ -7,7 +7,8 @@ html {
   background-color: #3d5a80;
   color: #e0fbfc;
   font-size: 1rem;
-  line-height: 1;
+  line-height: 1.618;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -16,19 +17,13 @@ body {
 
 h1 {
   color: #ee6c4d;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.6179rem;
 }
 
 h2,
 h3 {
   color: #f7e0d4;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.618rem;
-}
-
-main {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -41,6 +36,7 @@ input,
 select,
 fieldset {
   font: inherit;
+  line-height: inherit;
 }
 fieldset {
   padding: 0rem;
@@ -83,8 +79,9 @@ caption {
 .ch0 {
   background-color: #293241;
   margin: 0;
-  padding: 1.5rem;
+  padding: 1rem;
   margin: 0;
+  text-align: left;
 }
 
 .ch1 {
@@ -175,4 +172,6 @@ caption {
   color: #f5f5f5;
   text-align: justify;
   align-content: center;
+  text-indent: 2em;
+  font-family: inherit;
 }
