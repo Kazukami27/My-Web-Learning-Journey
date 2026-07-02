@@ -42,13 +42,19 @@ select,
 fieldset {
   font: inherit;
 }
+fieldset {
+  padding: 0rem;
+  text-transform: uppercase;
+}
 
 /**/
 /* Anchor Link */
 /**/
 
-a {
+a,
+abbr {
   color: #e0fbfc;
+  text-decoration: none;
 }
 a:hover,
 a:active {
@@ -111,6 +117,7 @@ caption {
 
 .cap {
   text-transform: uppercase;
+  text-decoration: underline overline 2px;
 }
 
 .cream {
@@ -119,6 +126,7 @@ caption {
 
 .title {
   color: #ee6c4d;
+  text-transform: uppercase;
 }
 
 .sides {
@@ -153,4 +161,18 @@ caption {
   height: 300px;
   border: 3px solid #ee6c4d;
   border-radius: 75px;
+}
+
+.About-P {
+  background-image: url("Display/IMG-04--COFFEE-BOOK.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: 100%;
+  min-height: 30vh;
+  margin: 0;
+  padding: 10% 50% 10% 10%;
+  color: #f5f5f5;
+  text-align: justify;
+  align-content: center;
 }
