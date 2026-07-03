@@ -1,4 +1,10 @@
 /**/
+/* Google fonts */
+/**/
+
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+/**/
 /* Background, Title (h1), subtitle (h2 & h3) */
 /* Font color, Size, Style, width */
 /**/
@@ -8,7 +14,8 @@ html {
   color: #e0fbfc;
   font-size: 1rem;
   line-height: 1.618;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
+  /*   font-family: "Roboto", sans-serif; */
 }
 
 body {
@@ -24,6 +31,7 @@ h2,
 h3 {
   color: #f7e0d4;
   font-size: 1.618rem;
+  font-weight: 900;
 }
 
 p {
@@ -38,27 +46,48 @@ fieldset {
   font: inherit;
   line-height: inherit;
 }
+
 fieldset {
   padding: 0rem;
   text-transform: uppercase;
+  color: #f7e0d4;
+  font-weight: 800;
 }
 
 /**/
-/* Anchor Link */
+/* Anchor Link*/
+/* order list = a -> a:visited -> a:hover a:focus -> a:active */
+/* "HSL" coloring option or "opacity" is great for 'a:hover' */
 /**/
 
 a,
 abbr {
   color: #e0fbfc;
   text-decoration: none;
+  cursor: pointer;
 }
+
 a:hover,
+a:focus,
 a:active {
   color: #f5f5f5;
 }
 
-/* Table */
+/**/
+/* Lists*/
+/**/
 
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
+ul {
+  list-style: square url(Display/LEGEND-01--COFFEE.png);
+}
+
+/**/
+/* Table */
+/**/
 table,
 tr,
 th,
@@ -103,6 +132,24 @@ caption {
   padding: 1.5rem;
 }
 
+.About-P {
+  background-image: url("Display/IMG-04--COFFEE-BOOK.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: 100%;
+  min-height: 30vh;
+  margin: 0;
+  padding: 10% 40% 10% 10%;
+  color: #f5f5f5;
+  text-align: justify;
+  align-content: center;
+  text-indent: 2em;
+  font-family: inherit;
+}
+
+/* Specific Element */
+
 .bold {
   font-weight: 700;
 }
@@ -132,6 +179,13 @@ caption {
   width: 100%;
 }
 
+.listnone {
+  list-style: none;
+  padding: 1;
+}
+
+/* Shapes for DIV element */
+
 .object1 {
   flex: 1;
   margin: 3rem;
@@ -158,20 +212,4 @@ caption {
   height: 300px;
   border: 3px solid #ee6c4d;
   border-radius: 75px;
-}
-
-.About-P {
-  background-image: url("Display/IMG-04--COFFEE-BOOK.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: 100%;
-  min-height: 30vh;
-  margin: 0;
-  padding: 10% 50% 10% 10%;
-  color: #f5f5f5;
-  text-align: justify;
-  align-content: center;
-  text-indent: 2em;
-  font-family: inherit;
 }
