@@ -42,9 +42,11 @@ button,
 textarea,
 input,
 select,
-fieldset {
+fieldset,
+mark {
   font: inherit;
   line-height: inherit;
+  color: inherit;
 }
 
 fieldset {
@@ -52,6 +54,11 @@ fieldset {
   text-transform: uppercase;
   color: #f7e0d4;
   font-weight: 800;
+}
+
+mark {
+  background-color: #ee6c4d;
+  opacity: 0.9;
 }
 
 /**/
@@ -82,7 +89,12 @@ ol {
 }
 
 ul {
-  list-style: square url(Display/LEGEND-01--COFFEE.png);
+  list-style: square;
+}
+
+ul ::marker {
+  color: #ee6c4d;
+  /* content: "Test"; */
 }
 
 /**/
@@ -184,6 +196,17 @@ caption {
   padding: 1;
 }
 
+.listcustom1 li:nth-child(1)::marker,
+.listcustom1 li:nth-child(3)::marker {
+  list-style: square;
+  content: "☕︎ ";
+}
+
+.listcustom1 li:nth-child(2)::marker {
+  list-style: square;
+  content: "☎︎ ";
+}
+
 /* Shapes for DIV element */
 
 .object1 {
@@ -201,6 +224,7 @@ caption {
   color: #ee6c4d;
   font-size: 1.618rem;
 }
+
 .object2 {
   flex: 1;
   margin: 3rem;
@@ -212,4 +236,8 @@ caption {
   height: 300px;
   border: 3px solid #ee6c4d;
   border-radius: 75px;
+  text-align: center;
+  align-content: center;
+  color: #ee6c4d;
+  font-size: 1.618rem;
 }
