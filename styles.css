@@ -207,8 +207,19 @@ caption {
   font-family: inherit;
 }
 
-.menu li a:focus,
-.menu li a:hover {
+.hmenu {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.hmenu li {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.vmenu li a:focus,
+.vmenu li a:hover {
   display: block;
   background: #293241;
 }
