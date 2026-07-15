@@ -21,48 +21,47 @@
 
     <header>
       <h1 class="bold ch0">
-        THE START OF MY JOURNEY <br />
-        CHAPTER ONE:
-        <a href="https://youtu.be/kUMe1FH4CHE" target="_blank"
-          ><strong>HTML</strong></a
-        >
-        &
-        <a
-          href="https://youtu.be/OXGznpKZ_sA?si=AI1CLX4_2WXncom-"
-          target="_blank"
-        >
-          <strong>CSS</strong></a
-        >
+        <span class="fleft">
+          MY JOURNEY OF
+          <a href="https://youtu.be/kUMe1FH4CHE" target="_blank"
+            ><strong>HTML</strong></a
+          >
+          &
+          <a
+            href="https://youtu.be/OXGznpKZ_sA?si=AI1CLX4_2WXncom-"
+            target="_blank"
+          >
+            <strong>CSS</strong></a
+          >
+        </span>
 
-        <ul class="listnone hmenu">
-          <li>
-            <a href="#html" class="bold">Learning HTML</a>
-          </li>
-          <li>
-            <a href="#vacation" class="bold">Planning a Vacation</a>
-          </li>
-          <li><a href="#Second Page" class="bold">About</a></li>
-        </ul>
+        <!-- @Detail: Navigation Tab to search Section ID & Fieldset -->
+
+        <nav aria-label="primary-navigation">
+          <ul class="listnone hmenu">
+            <li>
+              <a href="#html" class="bold">Learning HTML</a>
+            </li>
+            <li>
+              <a href="#vacation" class="bold">Planning a Vacation</a>
+            </li>
+            <li><a href="#Second Page" class="bold">About</a></li>
+          </ul>
+        </nav>
       </h1>
 
-      <!-- @Detail: Navigation Tab to search Section ID & Fieldset -->
-
-      <nav aria-label="primary-navigation">
-        <fieldset>
-          <legend>&nbsp;Pages</legend>
-          <ul class="listnone vmenu">
-            <li>
-              <a href="#html" class="bold">&nbsp;&nbsp;Learning HTML</a>
-            </li>
-            <li>
-              <a href="#vacation" class="bold"
-                >&nbsp;&nbsp;Planning a Vacation</a
-              >
-            </li>
-            <li><a href="#Second Page" class="bold">&nbsp;&nbsp;About</a></li>
-          </ul>
-        </fieldset>
-      </nav>
+      <fieldset>
+        <legend>&nbsp;Pages</legend>
+        <ul class="listnone vmenu">
+          <li>
+            <a href="#html" class="bold">&nbsp;&nbsp;Learning HTML</a>
+          </li>
+          <li>
+            <a href="#vacation" class="bold">&nbsp;&nbsp;Planning a Vacation</a>
+          </li>
+          <li><a href="#Second Page" class="bold">&nbsp;&nbsp;About</a></li>
+        </ul>
+      </fieldset>
     </header>
 
     <!--     <br /> -->
@@ -73,125 +72,125 @@
 
     <main>
       <section id="html" class="ch1">
-        <h2>I'm Ready to Learn HTML</h2>
+        <div class="object0">
+          <h2>I'm Ready to Learn HTML</h2>
 
-        <!-- @CSS: Span & CSS Code-->
-        <!---->
+          <!-- @CSS: Span & CSS Code-->
+          <!---->
 
-        <p>This is my <span class="cream bold cap">first</span> web page</p>
+          <p>This is my <span class="cream bold cap">first</span> web page</p>
 
-        <!---->
-        <!-- @Detail: Insert Image with size, tooltip, caption -->
-        <!---->
+          <!---->
+          <!-- @Detail: Insert Image with size, tooltip, caption -->
+          <!---->
 
-        <h3>My Daily Schedule</h3>
-        <p>Let me tell you how:</p>
+          <h3>My Daily Schedule</h3>
+          <p>Let me tell you how:</p>
 
-        <!-- @Detail: Number list & Hyperlink, Abbreviation & Bold -->
+          <!-- @Detail: Number list & Hyperlink, Abbreviation & Bold -->
 
-        <ol start="3" reversed>
-          <li>...I learn more about web dev.</li>
-          <li>...I plan out my Schedule</li>
-          <li>
-            ...I use resources from
-            <abbr title="Mozilla Developer Network">
-              <a href="https://developer.mozilla.org/"
-                ><strong>MDN</strong></a
-              ></abbr
-            >
-          </li>
-        </ol>
+          <ol start="3" reversed>
+            <li>...I learn more about web dev.</li>
+            <li>...I plan out my Schedule</li>
+            <li>
+              ...I use resources from
+              <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/"
+                  ><strong>MDN</strong></a
+                ></abbr
+              >
+            </li>
+          </ol>
 
-        <!---->
-        <!-- @Detail: SEO Improvement by QnA, Highlights, Time -->
-        <!---->
+          <!---->
+          <!-- @Detail: SEO Improvement by QnA, Highlights, Time -->
+          <!---->
 
-        <aside>
-          <details>
-            <summary>
-              Guess the <mark>number of hours</mark> i code per day
-            </summary>
-            <p>
-              I Start at <time datetime="08:00">8 Am</time> everymorning for 3
-              hours
-            </p>
-          </details>
-        </aside>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> i code per day
+              </summary>
+              <p>
+                I Start at <time datetime="08:00">8 Am</time> everymorning for 3
+                hours
+              </p>
+            </details>
+          </aside>
 
-        <!---->
-        <!-- @Detail: Table Element: Title & Data [CSS]-->
-        <!---->
+          <!---->
+          <!-- @Detail: Table Element: Title & Data [CSS]-->
+          <!---->
 
-        <table>
-          <caption>
-            My Daily Schedule
-          </caption>
+          <table>
+            <caption>
+              My Daily Schedule
+            </caption>
 
-          <thead>
-            <tr>
-              <th>&nbsp;</th>
-              <th scope="col">Time</th>
-              <th scope="col">Activity</th>
-            </tr>
-          </thead>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            <tr>
-              <th scope="row">Morning</th>
-              <td>
-                <time datetime="08:00">08 AM</time> -
-                <time datetime="11:00">11 AM</time>
-              </td>
-              <td>Write Code</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">08 AM</time> -
+                  <time datetime="11:00">11 AM</time>
+                </td>
+                <td>Write Code</td>
+              </tr>
 
-            <tr>
-              <th scope="row">Afternoon</th>
-              <td>
-                <time datetime="12:00">12 PM</time> -
-                <time datetime="15:00">03 PM</time>
-              </td>
-              <td>Write More Codes</td>
-            </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12 PM</time> -
+                  <time datetime="15:00">03 PM</time>
+                </td>
+                <td>Write More Codes</td>
+              </tr>
 
-            <tr>
-              <th scope="row">Afternoon</th>
+              <tr>
+                <th scope="row">Afternoon</th>
 
-              <td>
-                <time datetime="15:00">03 PM</time> -
-                <time datetime="18:00">06 PM</time>
-              </td>
-              <td>Write Even more Codes</td>
-            </tr>
+                <td>
+                  <time datetime="15:00">03 PM</time> -
+                  <time datetime="18:00">06 PM</time>
+                </td>
+                <td>Write Even more Codes</td>
+              </tr>
 
-            <!-- @Detail: Table Element: Merge Row or Column [CSS]-->
+              <tr>
+                <th rowspan="2" scope="row">Evening</th>
+                <td rowspan="2"><time datetime="18:00">06 PM Onwards</time></td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <td>Sleep</td>
+              </tr>
 
-            <tr>
-              <th rowspan="2" scope="row">Evening</th>
-              <td rowspan="2"><time datetime="18:00">06 PM Onwards</time></td>
-              <td>Free Time</td>
-            </tr>
-            <tr>
-              <td>Sleep</td>
-            </tr>
+              <tr>
+                <th rowspan="2" scope="row">Test Header</th>
+                <td>Tme 1</td>
+                <td>Activity 1</td>
+              </tr>
+              <tr>
+                <td>Time 2</td>
+                <td>Activity 2</td>
+              </tr>
+            </tbody>
 
-            <tr>
-              <th rowspan="2" scope="row">Test Header</th>
-              <td>Tme 1</td>
-              <td>Activity 1</td>
-            </tr>
-            <tr>
-              <td>Time 2</td>
-              <td>Activity 2</td>
-            </tr>
-          </tbody>
-
-          <tfoot>
-            <tr>
-              <td colspan="3">The End</td>
-            </tr>
-          </tfoot>
-        </table>
+            <tfoot>
+              <tr>
+                <td colspan="3">The End</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </section>
 
       <!---->
@@ -223,13 +222,63 @@
           as well
         </p>
 
-        <!-- @CSS: Insert Object-->
+        <!-- @CSS: Insert Object & Text Box -->
         <!---->
 
         <div class="sides">
           <div class="object1">Tester</div>
           <div class="object2">Tester</div>
         </div>
+
+        <div>
+          <div class="object3p">
+            <div class="object3 fleft"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius
+              repudiandae aliquam assumenda optio tenetur ea reiciendis adipisci
+              aspernatur. Excepturi sunt obcaecati vitae voluptatum nulla
+              nostrum commodi provident possimus repellat?
+            </p>
+            <p>
+              Culpa ad soluta debitis consectetur autem veritatis harum
+              obcaecati exercitationem eaque, aliquid voluptas consequatur?
+              Mollitia, doloribus fugiat corporis beatae reiciendis vitae.
+              Debitis quis deleniti vel fugit voluptas tenetur, at asperiores?
+            </p>
+            <p>
+              Velit, quod asperiores? Deleniti omnis cumque suscipit quas itaque
+              accusamus! Corporis, eveniet vero tempora incidunt tenetur
+              voluptatum quaerat natus debitis molestiae maiores nam adipisci,
+              modi nesciunt a deleniti iusto ut!
+            </p>
+          </div>
+
+          <div class="clear"></div>
+          <br />
+          <div class="object4p">
+            <div class="object4 fright"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius
+              repudiandae aliquam assumenda optio tenetur ea reiciendis adipisci
+              aspernatur. Excepturi sunt obcaecati vitae voluptatum nulla
+              nostrum commodi provident possimus repellat?
+            </p>
+            <p>
+              Culpa ad soluta debitis consectetur autem veritatis harum
+              obcaecati exercitationem eaque, aliquid voluptas consequatur?
+              Mollitia, doloribus fugiat corporis beatae reiciendis vitae.
+              Debitis quis deleniti vel fugit voluptas tenetur, at asperiores?
+            </p>
+            <p>
+              Velit, quod asperiores? Deleniti omnis cumque suscipit quas itaque
+              accusamus! Corporis, eveniet vero tempora incidunt tenetur
+              voluptatum quaerat natus debitis molestiae maiores nam adipisci,
+              modi nesciunt a deleniti iusto ut!
+            </p>
+          </div>
+        </div>
+
+        <div class="clear"></div>
 
         <!-- @Detail: Add dot List & Addresses & Image Lazy -->
 
@@ -275,6 +324,37 @@
           <dt>Mountain Tops</dt>
           <dd>These are also cold</dd>
         </dl>
+
+        <!-- @Detail: Column -->
+
+        <h3>More Places to Go</h3>
+        <div class="ch3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            facilis animi iste pariatur enim dolore neque soluta saepe rerum,
+            voluptate numquam in! Ullam laboriosam sapiente ab error enim. Eum,
+            consequatur.
+          </p>
+          <h4>TEST</h4>
+          <p>
+            Assumenda nihil nisi ea iure quisquam asperiores veniam delectus
+            enim. Molestiae nemo similique excepturi, facilis maxime error
+            libero laudantium cum reprehenderit earum animi ullam facere nostrum
+            vitae culpa omnis. Quae!
+          </p>
+          <p>
+            Est aliquam consectetur incidunt debitis doloremque itaque maiores
+            sapiente accusantium vitae dolor enim accusamus optio repellendus
+            repellat dolores eius hic culpa maxime, cupiditate temporibus
+            explicabo officiis corrupti eum? Tempore, maxime!
+          </p>
+          <p>
+            A commodi dolorum autem cum asperiores unde reprehenderit quod
+            voluptatibus tempore veritatis voluptates fugiat nam dolore quasi
+            culpa, officiis placeat voluptate. Quasi, sapiente minus
+            consequuntur velit nam voluptas in accusantium!
+          </p>
+        </div>
       </section>
     </main>
 
