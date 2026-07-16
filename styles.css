@@ -191,9 +191,9 @@ caption {
 
 .ch3 {
   text-align: justify;
-  columns: 3 250px;
+  columns: 2 250px;
   column-rule: 2px solid #e0fbfc;
-  column-gap: 2rem;
+  column-gap: 4rem;
 }
 
 .ch3 p {
@@ -206,6 +206,23 @@ caption {
   margin: 0 0 1rem 0;
   padding: 1rem;
   break-inside: avoid;
+  display: none;
+}
+
+.ch3 .quote {
+  font-size: 2.6179rem;
+  text-align: center;
+  color: #ee6c4d;
+  column-span: all;
+  margin-top: 2rem;
+}
+
+.ch3 .quote img {
+  max-width: 500px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .About-P {
@@ -233,7 +250,7 @@ caption {
 
 .hmenu {
   text-align: right;
-  margin: 0 0 0 50%;
+  margin: 0 0 0 0;
   padding: 0;
 }
 
@@ -241,7 +258,7 @@ caption {
   display: inline-block;
   margin-inline: 0rem;
   font-size: 1rem;
-  padding: 0%;
+  padding: 0;
   margin: 0;
 }
 
@@ -371,6 +388,11 @@ caption {
   text-align: justify;
 }
 
+.object3p p,
+.object4p p {
+  margin-top: 0;
+}
+
 .object4 {
   width: 30vw;
   height: 30vw;
@@ -387,4 +409,31 @@ caption {
   display: flow-root;
   padding: 1rem;
   text-align: justify;
+}
+
+/**/
+/* WA */
+/**/
+
+.wa {
+  position: fixed;
+  z-index: 0;
+  bottom: 20px;
+  right: 20px;
+}
+
+.wa a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px #000000;
+}
+
+.wa a:hover {
+  transform: scale(1.1);
+  background-color: #20ba5a;
 }
