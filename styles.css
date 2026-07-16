@@ -142,6 +142,7 @@ ul ::marker {
 /**/
 /* Table */
 /**/
+
 table,
 tr,
 th,
@@ -159,14 +160,79 @@ caption {
 /* Class */
 /**/
 
+/* HEADING TITLE & NAVIGATION */
+
 .ch0 {
   background-color: #293241;
   margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  position: relative;
   padding: 1rem 1rem 1rem 1rem;
   margin: 0;
-  text-align: left;
   border-bottom: 2px solid #f5f5f5;
 }
+
+.ch0 h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.hmenu {
+  display: none;
+}
+
+.hmenu ul {
+  display: flex;
+  flex-direction: column; /* Stack navigation links vertically on mobile */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  gap: 15px;
+}
+
+/**/
+/* desktop vs mobile view differentiator */
+/**/
+
+@media (min-width: 992px) {
+  .ch0 {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .hmenu {
+    display: block;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hmenu li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+
+  header fieldset {
+    display: none;
+  }
+}
+
+/*  */
+.vmenu li a:focus,
+.vmenu li a:hover {
+  display: block;
+  background: #293241;
+}
+
+/* BODY */
 
 .ch1 {
   background-color: #293241;
@@ -242,44 +308,6 @@ caption {
   font-family: inherit;
 }
 
-/**/
-/**/
-/* @NAVIGATION BAR */
-/**/
-/**/
-
-.hmenu {
-  text-align: right;
-  margin: 0 0 0 0;
-  padding: 0;
-}
-
-.hmenu li {
-  display: inline-block;
-  margin-inline: 0rem;
-  font-size: 1rem;
-  padding: 0;
-  margin: 0;
-}
-
-.vmenu li a:focus,
-.vmenu li a:hover {
-  display: block;
-  background: #293241;
-}
-
-.fleft {
-  float: left;
-}
-
-.fright {
-  float: right;
-}
-
-.clear {
-  clear: both;
-}
-
 /* Specific Element */
 
 .bold {
@@ -306,10 +334,16 @@ caption {
   text-transform: uppercase;
 }
 
-.sides {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.clear {
+  clear: both;
 }
 
 .listnone {
@@ -337,14 +371,25 @@ caption {
   padding: 1rem;
 }
 
+.sides {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  justify-content: space-evenly;
+}
+
 .object1 {
   flex: 1;
-  margin: 3rem;
+  margin: 1.5rem;
   background-color: #f7e0d4;
-  min-width: 200px;
-  height: 300px;
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 300px;
+  max-height: 400px;
   border: 3px solid #ee6c4d;
-  border-radius: 150px;
+  border-radius: 75px;
   outline: 5px solid #3d5a80;
   outline-offset: -0.55rem;
   text-align: center;
@@ -355,13 +400,15 @@ caption {
 
 .object2 {
   flex: 1;
-  margin: 3rem;
+  margin: 1.5rem;
   background-image: url("Display/IMG-01--LAKESIDE-CABIN.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  min-width: 200px;
-  height: 300px;
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 300px;
+  max-height: 400px;
   border: 3px solid #ee6c4d;
   border-radius: 75px;
   text-align: center;
@@ -417,7 +464,7 @@ caption {
 
 .wa {
   position: fixed;
-  z-index: 0;
+  z-index: 20;
   bottom: 20px;
   right: 20px;
 }
