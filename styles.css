@@ -17,6 +17,14 @@
   animation-duration: 0.5s;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
 /**/
 /* Background, Title (h1), subtitle (h2 & h3) */
 /* Font color, Size, Style, width */
@@ -265,6 +273,7 @@ caption {
 .ch3 p {
   margin-top: 0;
 }
+
 .ch3 h4 {
   background-color: #3d5a80;
   color: #f7e0d4;
@@ -284,7 +293,10 @@ caption {
 }
 
 .ch3 .quote img {
-  max-width: 500px;
+  max-width: 400px;
+  box-shadow: 0 4px 10px #000000;
+  display: inline-block;
+  margin: 0rem 2rem;
 }
 
 .nowrap {
@@ -502,6 +514,112 @@ caption {
 }
 
 /**/
+/* GALLERY */
+/**/
+
+.gallery {
+  background-color: #293241;
+  margin: 0rem;
+  padding: 0rem 1.5rem 3rem 1.5rem;
+  border-bottom: 3px solid #f5f5f5;
+}
+
+.gallery h2 {
+  color: #ee6c4d;
+  font-weight: 800;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+  gap: 1rem;
+  padding: 0rem;
+}
+
+.gallery-hide {
+  display: none;
+}
+
+.gallery-item {
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 10px #000000;
+  color: #293241;
+  padding: 1rem;
+}
+
+.gallery-item:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url("Display/IMG-01--LAKESIDE-CABIN.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.gallery-item:nth-child(2) {
+  background-image: url("Display/IMG-02--SUNSET-FOREST.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.gallery-item:nth-child(3) {
+  background-image: url("Display/IMG-03--RAVINE.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.gallery-item:nth-child(4) {
+  background-image: url("Display/IMG-04--COFFEE-BOOK.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.gallery-item:nth-child(5) {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url("Display/IMG-05--DOG-PARK.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.gallery-item:nth-child(6) {
+  background-image: url("Display/IMG-06--DOG-SLEEP.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(1, 1fr 1fr);
+    grid-auto-rows: minmax(125px, auto);
+  }
+  /*   .gallery-item:nth-child(4) {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url("Display/IMG-05--DOG-PARK.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  .gallery-item:nth-child(5) {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-image: url("Display/IMG-04--COFFEE-BOOK.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  } */
+
+  .gallery-item:nth-child(5) {
+    grid-column: 1 / 3;
+    grid-row: 4 / 6;
+  }
+}
+
+/**/
 /* REVIEWS */
 /**/
 
@@ -569,6 +687,13 @@ caption {
   font-weight: 800;
   margin-bottom: 0.5rem;
   font-size: 1.618rem;
+}
+
+.review-user-role {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.5;
+  margin-left: 0.1rem;
 }
 
 .review-rating {
