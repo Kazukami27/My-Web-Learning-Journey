@@ -2,7 +2,7 @@
 /* Google fonts */
 /**/
 
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
 
 /**/
 /* View Transition */
@@ -113,6 +113,53 @@ hr {
   border: 1px solid #f5f5f5;
 }
 
+/* Lists */
+
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
+ul {
+  list-style: square;
+}
+
+ul ::marker {
+  color: #ee6c4d;
+  /* content: "Test"; */
+}
+
+.listnone {
+  list-style: none;
+  margin-top: 1.5rem;
+  padding: 1rem 0 0 1rem;
+}
+
+.listcustom1 li:nth-child(1)::marker,
+.listcustom1 li:nth-child(3)::marker {
+  list-style: square;
+  content: "☕︎ ";
+}
+
+.listcustom1 li:nth-child(2)::marker {
+  list-style: square;
+  content: "☎︎ ";
+}
+
+/* Table */
+
+table,
+tr,
+th,
+td,
+caption {
+  border: 1px solid #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  padding: 2rex;
+  width: auto;
+  height: auto;
+}
+
 /**/
 /* Anchor Link*/
 /* order list = a -> a:visited -> a:hover a:focus -> a:active */
@@ -129,40 +176,6 @@ abbr {
 a:hover,
 a:focus {
   color: #f5f5f5;
-}
-
-/**/
-/* Lists*/
-/**/
-
-ol {
-  list-style-type: decimal-leading-zero;
-}
-
-ul {
-  list-style: square;
-}
-
-ul ::marker {
-  color: #ee6c4d;
-  /* content: "Test"; */
-}
-
-/**/
-/* Table */
-/**/
-
-table,
-tr,
-th,
-td,
-caption {
-  border: 1px solid #f5f5f5;
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  padding: 2rex;
-  width: auto;
-  height: auto;
 }
 
 /**/
@@ -234,7 +247,6 @@ caption {
   }
 }
 
-/*  */
 .vmenu li a:focus,
 .vmenu li a:hover {
   display: block;
@@ -306,10 +318,20 @@ caption {
 }
 
 .quote {
+  font-family: "Ultra", serif;
   font-size: 2.6179rem;
   text-align: center;
-  color: #ee6c4d;
+  text-transform: uppercase;
   margin-top: 2rem;
+
+  color: #00000001;
+  filter: drop-shadow(1px 1px 1px #f5f5f5);
+
+  background-image: url(Display/IMG-03--RAVINE.webp);
+  background-size: 100%;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .quote-image {
@@ -342,31 +364,55 @@ caption {
   }
 }
 
-.nowrap {
-  white-space: nowrap;
-}
+/**/
+/* Page 2 About */
+/**/
 
-.About-P {
+.about-container {
   background-image: url("Display/IMG-04--COFFEE-BOOK.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: 100%;
-  min-height: 30vh;
+  min-height: 50vh;
+}
+
+.About-P {
   border-bottom: 2px solid #f5f5f5;
   margin: 0;
   padding: 10% 40% 10% 10%;
   color: #f5f5f5;
+  background-color: #0000008e;
   text-align: justify;
   align-content: center;
   text-indent: 2em;
   font-family: inherit;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.about-links {
+  background-color: #293241;
+  background-image:
+    url("Display/IMG-09--BACKGROUND-BUBBLE.png"),
+    linear-gradient(to right, #98c1d9, #e0fbfc);
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.about-links ul {
+  background-color: #00000056;
+  margin: 0;
+  padding: 1.5rem;
+  text-shadow: 2px 2px 5px #000000;
 }
 
 /* Specific Element */
 
 .bold {
   font-weight: 700;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .border {
@@ -399,23 +445,6 @@ caption {
 
 .clear {
   clear: both;
-}
-
-.listnone {
-  list-style: none;
-  margin-top: 1.5rem;
-  padding: 1rem 0 0 1rem;
-}
-
-.listcustom1 li:nth-child(1)::marker,
-.listcustom1 li:nth-child(3)::marker {
-  list-style: square;
-  content: "☕︎ ";
-}
-
-.listcustom1 li:nth-child(2)::marker {
-  list-style: square;
-  content: "☎︎ ";
 }
 
 /* Objects: Shape, Textbox */
@@ -486,6 +515,10 @@ caption {
 
   color: #f5f5f5;
   font-size: 1.618rem;
+
+  /*   position: absolute;
+  left: -1000000px;
+  display: none; */
 }
 
 .object3 {
