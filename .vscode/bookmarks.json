@@ -4,52 +4,57 @@
 			"path": "styles.css",
 			"bookmarks": [
 				{
-					"line": 32,
+					"line": 39,
 					"column": 0,
 					"label": "Basic"
 				},
 				{
-					"line": 78,
+					"line": 85,
 					"column": 0,
 					"label": "Elements"
 				},
 				{
-					"line": 166,
+					"line": 173,
 					"column": 0,
 					"label": "Anchor Link"
 				},
 				{
-					"line": 190,
+					"line": 197,
 					"column": 0,
 					"label": "@HEADER"
 				},
 				{
-					"line": 261,
+					"line": 274,
 					"column": 0,
 					"label": "Sections"
 				},
 				{
-					"line": 386,
+					"line": 322,
+					"column": 0,
+					"label": "quotes"
+				},
+				{
+					"line": 401,
 					"column": 0,
 					"label": "PAGE 2"
 				},
 				{
-					"line": 473,
+					"line": 504,
 					"column": 0,
 					"label": "Objects"
 				},
 				{
-					"line": 609,
+					"line": 641,
 					"column": 0,
 					"label": "Floating WA"
 				},
 				{
-					"line": 636,
+					"line": 668,
 					"column": 0,
 					"label": "Gallery"
 				},
 				{
-					"line": 701,
+					"line": 733,
 					"column": 0,
 					"label": "Reviews"
 				}
@@ -69,7 +74,7 @@
 					"label": "HERO"
 				},
 				{
-					"line": 388,
+					"line": 401,
 					"column": 0,
 					"label": "Quote"
 				}
