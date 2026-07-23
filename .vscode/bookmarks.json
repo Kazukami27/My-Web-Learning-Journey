@@ -14,42 +14,47 @@
 					"label": "Elements"
 				},
 				{
-					"line": 179,
+					"line": 203,
 					"column": 0,
 					"label": "Anchor Link"
 				},
 				{
-					"line": 203,
+					"line": 227,
 					"column": 0,
 					"label": "@HEADER"
 				},
 				{
-					"line": 280,
+					"line": 287,
 					"column": 0,
 					"label": "Sections"
 				},
 				{
-					"line": 415,
+					"line": 422,
 					"column": 0,
 					"label": "PAGE 2"
 				},
 				{
-					"line": 523,
+					"line": 531,
 					"column": 0,
 					"label": "Objects"
 				},
 				{
-					"line": 707,
+					"line": 573,
+					"column": 0,
+					"label": "ANIMATION"
+				},
+				{
+					"line": 717,
 					"column": 0,
 					"label": "Floating WA"
 				},
 				{
-					"line": 734,
+					"line": 744,
 					"column": 0,
 					"label": "Gallery"
 				},
 				{
-					"line": 799,
+					"line": 809,
 					"column": 0,
 					"label": "Reviews"
 				}
@@ -59,7 +64,7 @@
 			"path": "index.html",
 			"bookmarks": [
 				{
-					"line": 39,
+					"line": 42,
 					"column": 0,
 					"label": "NAV"
 				},

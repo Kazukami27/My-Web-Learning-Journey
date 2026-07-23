@@ -95,23 +95,53 @@ mark {
 /**/
 
 fieldset {
-  border: 2px solid #f5f5f5;
-  margin: 0 0 -1.1rem 0;
+  width: 100vw;
+  border: none;
+  margin: 0;
   padding: 0;
   text-transform: uppercase;
   color: #f7e0d4;
   font-weight: 800;
 }
 
+fieldset ul {
+  margin: 0;
+  padding: 0;
+}
+
 fieldset li {
-  margin: 0rem 0 0 -1rem;
-  border: 1px solid #f7e0d4;
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid #f7e0d4;
 }
 
 fieldset legend {
+  display: none;
   float: left;
-  margin: 0.5rem 0 0 0.4rem;
+  margin: 0;
   padding: 0;
+}
+
+.listnone {
+  list-style: none;
+  margin-top: 1.5rem;
+  padding: 0rem;
+}
+
+fieldset .listnone {
+  text-align: left;
+  margin: 0;
+}
+
+/* .vmenu li a:focus,
+.vmenu li a:hover {
+  display: block;
+  background: #293241;
+} */
+
+.vmenu li :is(a:focus, a:hover) {
+  display: block;
+  background: #293241;
 }
 
 /* img {
@@ -144,12 +174,6 @@ ul {
 ul ::marker {
   color: #ee6c4d;
   /* content: "Test"; */
-}
-
-.listnone {
-  list-style: none;
-  margin-top: 1.5rem;
-  padding: 1rem 0 0 1rem;
 }
 
 .listcustom1 li:nth-child(1)::marker,
@@ -206,12 +230,11 @@ a:focus {
   background-color: #293241;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  gap: 5px;
-  position: relative;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
   margin: 0;
   border-bottom: 2px solid #f5f5f5;
   box-shadow: var(--SHADOWS);
@@ -222,18 +245,8 @@ a:focus {
   padding: 0;
 }
 
-.hmenu {
+.ch0 nav {
   display: none;
-}
-
-.hmenu ul {
-  display: flex;
-  flex-direction: column; /* Stack navigation links vertically on mobile */
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-  gap: 15px;
 }
 
 /**/
@@ -244,37 +257,31 @@ a:focus {
   .ch0 {
     flex-direction: row;
     justify-content: space-between;
-    text-align: left;
+    padding: 1rem;
   }
 
-  .hmenu {
-    display: block;
-    text-align: right;
+  .ch0 h1 {
+    display: flex;
+    text-align: center;
+  }
+
+  .ch0 nav {
+    display: flex;
+    flex-direction: row;
     margin: 0;
     padding: 0;
   }
 
   .hmenu li {
-    display: inline-block;
+    display: inline;
     margin: 0;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     font-size: 1rem;
   }
 
-  header fieldset {
+  .vmenu {
     display: none;
   }
-}
-
-/* .vmenu li a:focus,
-.vmenu li a:hover {
-  display: block;
-  background: #293241;
-} */
-
-.vmenu li :is(a:focus, a:hover) {
-  display: block;
-  background: #293241;
 }
 
 /* BODY */
@@ -468,6 +475,7 @@ a:focus {
   text-indent: 2em;
   font-family: inherit;
   text-shadow: 2px 2px 5px #000000;
+  min-height: 40vh;
 }
 
 .about-links {
@@ -572,15 +580,17 @@ a:focus {
 }
 
 .ani-container img:hover {
-  animation: roll 4s infinite;
+  animation: roll 5s normal;
 }
 
 .animate {
-  animation-name: roll;
-  animation-duration: 4s;
+  /*   animation-name: roll;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-delay: 1s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 5;
+  animation-direction: alternate; */
+  animation: 5s ease-in-out 1s 2 normal forwards roll;
 }
 
 @keyframes roll {
@@ -717,8 +727,8 @@ a:focus {
 .wa {
   position: fixed;
   z-index: 20;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
 }
 
 .wa a {
