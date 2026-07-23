@@ -554,13 +554,48 @@ a:focus {
   /*  transition-property: background-color, transform;
   transition-duration: 1s, 2s;
   transition-delay: 0s; */
-  transition: all 1s linear 0.5s;
+  transition: all 1s ease-in-out 0.5s;
 }
 
 .object1:nth-child(3):hover {
   transform: rotate(360deg) scale(110%, 110%);
   /* transform: translatex(45%); */
   /* transform: skew(-10deg); */
+}
+
+/* ANIMATION */
+
+.ani-container img {
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.ani-container img:hover {
+  animation: roll 4s infinite;
+}
+
+.animate {
+  animation-name: roll;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+}
+
+@keyframes roll {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(25vw) rotate(180deg);
+  }
+  66% {
+    transform: translateX(-25vw) rotate(-180deg);
+  }
+  100% {
+    transform: translateX(0) scale(110%);
+  }
 }
 
 .object1 {
@@ -594,7 +629,7 @@ a:focus {
   background-image: url("Display/IMG-10--CSS-MEDIA-QUERY--801x500.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: left center;
   /*   min-width: 250px;
   max-width: 600px;
   min-height: 250px;
