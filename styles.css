@@ -27,7 +27,7 @@ img {
 }
 
 section {
-  scroll-margin-top: 2rem;
+  scroll-margin-top: 1rem;
 }
 
 /* || VARIABLES */
@@ -264,10 +264,12 @@ nav :is(a:hover, a:focus) {
 }
 
 :is(header:hover, header:focus-within) .menu-icon::before {
+  background-color: transparent;
   transform: translatex(-20px) rotate(-45deg);
 }
 
 :is(header:hover, header:focus-within) .menu-icon::after {
+  background-color: transparent;
   transform: translatex(-20px) rotate(45deg);
 }
 
