@@ -4,79 +4,19 @@
 			"path": "styles.css",
 			"bookmarks": [
 				{
-					"line": 39,
+					"line": 96,
 					"column": 0,
-					"label": "Basic"
+					"label": "FIELDSET"
 				},
 				{
-					"line": 91,
+					"line": 282,
 					"column": 0,
-					"label": "Elements"
+					"label": "@HAMBURGER"
 				},
 				{
-					"line": 203,
-					"column": 0,
-					"label": "Anchor Link"
-				},
-				{
-					"line": 227,
-					"column": 0,
-					"label": "@HEADER"
-				},
-				{
-					"line": 287,
-					"column": 0,
-					"label": "Sections"
-				},
-				{
-					"line": 422,
-					"column": 0,
-					"label": "PAGE 2"
-				},
-				{
-					"line": 531,
-					"column": 0,
-					"label": "Objects"
-				},
-				{
-					"line": 573,
+					"line": 671,
 					"column": 0,
 					"label": "ANIMATION"
-				},
-				{
-					"line": 717,
-					"column": 0,
-					"label": "Floating WA"
-				},
-				{
-					"line": 744,
-					"column": 0,
-					"label": "Gallery"
-				},
-				{
-					"line": 809,
-					"column": 0,
-					"label": "Reviews"
-				}
-			]
-		},
-		{
-			"path": "index.html",
-			"bookmarks": [
-				{
-					"line": 42,
-					"column": 0,
-					"label": "NAV"
-				},
-				{
-					"line": 79,
-					"column": 0,
-					"label": "HERO"
-				},
-				{
-					"line": 416,
-					"column": 0,
-					"label": "Quote"
 				}
 			]
 		}
