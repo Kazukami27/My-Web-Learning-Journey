@@ -409,7 +409,6 @@ nav :is(a:hover, a:focus) {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-  background-attachment: 100%;
   min-height: 80vh;
 }
 
@@ -574,7 +573,6 @@ nav :is(a:hover, a:focus) {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: 100%;
   min-height: 40vh;
 }
 
